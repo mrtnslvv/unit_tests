@@ -1,0 +1,84 @@
+{
+  "id": "0d5cbbb8-ac12-47c9-9b4c-880dcf779488",
+  "version": "2.0",
+  "name": "octane test",
+  "url": "http://10.94.122.64:81",
+  "tests": [{
+    "id": "3a0e0044-575d-4cbb-9173-b64111dc40f0",
+    "name": "defect selection",
+    "commands": [{
+      "id": "f8581149-1532-4781-ac1a-232a692ebd81",
+      "comment": "",
+      "command": "open",
+      "target": "/ui/?p=1001/1002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a27817f4-864d-409a-8b82-ee5505251ab6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x683",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68f85de5-44c5-4412-8d5e-378ae02bb354",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1002",
+      "targets": [
+        ["linkText=1002", "linkText"],
+        ["css=.cursor-default > .alm-entity-grid-id-column", "css:finder"],
+        ["xpath=//a[contains(text(),'1002')]", "xpath:link"],
+        ["xpath=//div[@id='wrapped_grid']/div[5]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/entity-navigation?entityType=work_item&id=1002')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1002')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4b17d7-796d-48f4-80ea-fc156bd6f53b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-entity-form-document-view-header-return",
+      "targets": [
+        ["css=.svg-entity-form-document-view-header-return", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "122337c4-82cb-4f45-ba4c-90b66b10ba4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.odd > .l1",
+      "targets": [
+        ["css=.odd > .l1", "css:finder"],
+        ["xpath=//div[@id='wrapped_grid']/div[5]/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7688e735-4d59-4be5-921e-c3d22b65a6c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1003",
+      "targets": [
+        ["linkText=1003", "linkText"],
+        ["css=.active > .alm-entity-grid-id-column", "css:finder"],
+        ["xpath=(//a[contains(text(),'1003')])[2]", "xpath:link"],
+        ["xpath=//div[@id='wrapped_grid']/div[5]/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/entity-navigation?entityType=work_item&id=1003')]", "xpath:href"],
+        ["xpath=//div[5]/div/div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6583be1f-86aa-41cf-80b8-9a5d3b7f83c9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3a0e0044-575d-4cbb-9173-b64111dc40f0"]
+  }],
+  "urls": ["http://10.94.122.64:81/"],
+  "plugins": []
+}
